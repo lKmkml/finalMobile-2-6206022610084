@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("BMI CAl"),
       ),
       body: ListView.builder(
-        itemCount: docs?.length,
+        itemCount: docs.length,
         itemBuilder: (BuildContext context, int index) {
           return Card(
             margin: EdgeInsets.all(10),
@@ -78,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         });
               },
               contentPadding: EdgeInsets.only(right: 30, left: 36),
-              title: Text("Name : " + docs[index]['name']),
+              title: Text(docs[index]['name']),
               //trailing: Text(docs[index]['year']),
               trailing: Text("BMI : " + docs[index]['BMI']),
               subtitle: Text('Sex : ' +
